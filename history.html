@@ -12,34 +12,11 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div
-      id="history-screen"
-      class="main-card"
-      style="height: 80vh; display: flex; flex-direction: column"
-    >
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 20px;
-        "
-      >
-        <div
-          class="title-text"
-          style="
-            font-size: 1.5rem;
-            margin: 0;
-            text-shadow: 0 0 10px rgba(0, 255, 100, 0.4);
-            color: #00ff6a;
-          "
-        >
-          LỊCH SỬ CHƠI
-        </div>
+    <div id="history-screen" class="main-card" style="height: 80vh; display: flex; flex-direction: column" >
+      <div style=" display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; " >
+        <div class="title-text" style=" font-size: 1.5rem; margin: 0; text-shadow: 0 0 10px rgba(0, 255, 100, 0.4); color: #00ff6a; " > LỊCH SỬ CHƠI </div>
 
-        <button onclick="goTo('index.html')" class="btn-close-custom">
-          Đóng ✖
-        </button>
+        <button onclick="goTo('index.html')" class="btn-close-custom"> Đóng </button>
       </div>
 
       <div class="history-grid-layout history-header-row">
@@ -52,23 +29,14 @@
       <div id="history-list"></div>
     </div>
 
-    <div
-      id="detail-modal"
-      class="modal-overlay"
-      onclick="if(event.target == this) closeModal()"
-    >
+    <div id="detail-modal" class="modal-overlay" onclick="if(event.target == this) closeModal()" >
       <div class="modal-content">
         <div class="d-flex justify-content-between align-items-center mb-3">
-          <h5 class="m-0 fw-bold">📄 Chi tiết Ván Chơi</h5>
-          <button class="btn btn-sm btn-danger" onclick="closeModal()">
-            Đóng
-          </button>
+          <h5 class="m-0 fw-bold"> Chi tiết Ván Chơi</h5>
+          <button class="btn btn-sm btn-danger" onclick="closeModal()"> Đóng </button>
         </div>
         <div class="table-responsive">
-          <table
-            class="table table-bordered table-hover text-center"
-            style="font-size: 0.9rem"
-          >
+          <table class="table table-bordered table-hover text-center" style="font-size: 0.9rem" >
             <thead class="table-light">
               <tr>
                 <th>Cấp độ</th>
@@ -84,5 +52,7 @@
       </div>
     </div>
     <script src="assets/js/logic.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
